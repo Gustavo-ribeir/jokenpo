@@ -28,14 +28,16 @@ public class Principal {
 		
 		if(n1 == n2){
 			return "Empate!!!!";
-		} else if(n1 < n2){
+		} else if(n1 == 0 && n2 == 1){
 			return "Você ganhou!!!!";
-		} else if(n1 == 2 && n2 == 0) {
+		}else if(n1 == 1 && n2 == 2){
+			return "Você ganhou!!!!";
+		}
+		else if(n1 == 2 && n2 == 0) {
 			return "Você ganhou!!!!";
 			
-		}else if(n1 == 0 && n2 == 2) {
-			return "Você perdeu!!!";
 		}
+		
 		else {
 			return "Você perdeu!!!";
 		
